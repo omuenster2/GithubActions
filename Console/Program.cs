@@ -78,6 +78,11 @@ namespace GithubActionsLab
         }
         public static double Divide(string x, string y)
         {
+             double denominator = double.Parse(y);
+    if (denominator == 0)
+    {
+        throw new DivideByZeroException("Cannot divide by zero.");
+    }
             return double.Parse(x) / double.Parse(y);
         }
 
