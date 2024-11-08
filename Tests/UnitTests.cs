@@ -46,7 +46,7 @@ namespace GithubActionsLab
             Assert.Throws<FormatException>(() => Program.Divide("a", "2"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "b"));
         }
-
+        
         [Test]
         public void Divide_Null()
         {
